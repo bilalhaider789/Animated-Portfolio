@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Futura";
+  src: url("./assets/fonts/Futura-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/Helvetica-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Otamanopee";
+    src: url("./assets/fonts/Otamanopee.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  

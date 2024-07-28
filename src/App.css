@@ -1,0 +1,23 @@
+.letter {
+  transition: transform 0.15s ease;
+}
+
+.letter:hover {
+  transform: scaleX(1.75) scaleY(0.75);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #ded9d9;
+  
+}
+
+.test {
+  background-color: #e65b05;
+}
+
+.strokeText {
+  -webkit-text-stroke: 3px black;
+}
