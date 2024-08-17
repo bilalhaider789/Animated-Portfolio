@@ -36,17 +36,17 @@ function Sections() {
       <section className="overflow-x-hidden relative outer bg-slate-900 text-white text-[15vh]">
         <div ref={triggerRef}>
           <div ref={sectionRef} className="inner h-[100vh] w-[400vw] flex relative">
-            <div className="scroll-section h-[100vh] w-[100vw] flex justify-center items-center">
-              <h3>Section 1</h3>
+            <div className="scroll-section h-[100vh] w-[100vw] flex justify-center items-center bg-slate-800">
+              <h3>Skills</h3>
             </div>
-            <div className="scroll-section h-[100vh] w-[100vw] flex justify-center items-center">
-              <h3>Section 2</h3>
+            <div className="scroll-section h-[100vh] w-[100vw] flex justify-center items-center bg-slate-600">
+              <h3>FrontEnd</h3>
             </div>
-            <div className="scroll-section h-[100vh] w-[100vw] flex justify-center items-center">
-              <h3>Section 3</h3>
+            <div className="scroll-section h-[100vh] w-[100vw] flex justify-center items-center bg-slate-400">
+              <h3>Backend</h3>
             </div>
-            <div className="scroll-section h-[100vh] w-[100vw] flex justify-center items-center">
-              <h3>Section 4</h3>
+            <div className="scroll-section h-[100vh] w-[100vw] flex justify-center items-center bg-slate-200">
+              <h3>DevOps</h3>
             </div>
           </div>
         </div>

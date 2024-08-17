@@ -3,7 +3,6 @@ import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 
 function IntroHeading() {
-  let path = "M 100 100 Q 500 100 900 100";
   let finalPath = "M 100 100 Q 500 100 900 100";
   const [stringEnter, setStringEnter] = useState(false);
 
@@ -74,7 +73,7 @@ function IntroHeading() {
     return text.split("").map((letter, index) => (
       <span
         key={index}
-        className={`letter inline-block text-[8vw] uppercase leading-[0.5] tracking-tighter hover:text-[#e65b05]`}
+        className={`letter inline-block text-[8vw] uppercase leading-[1] tracking-tighter hover:text-[#e65b05]`}
       >
         {letter}
       </span>
@@ -84,7 +83,7 @@ function IntroHeading() {
   return (
     <div className="px-[5vw]">
       <div className="section1 relative h-[100vh] w-full pt-[20vh] font-otamanopee">
-        <div className="heading text-[12vw] leading-[0.7] tracking-tight">
+        <div className="heading text-[8vw] leading-[0.7] tracking-tight">
           {renderLetters("Hello,")}
           <br></br>
           <div className="flex gap-[2.5vw]">
@@ -93,12 +92,12 @@ function IntroHeading() {
             <h2>{renderLetters("Haider")}</h2>
           </div>
         </div>
-        <h4 className="desc mt-[2vw] text-[2vw] uppercase text-gray-600">
+        <h4 className="desc mt-[1.5vw] text-[1.5vw] uppercase text-gray-600">
           Professional Full Stack Developer | Polyglot Engineer | Devops
         </h4>
-        <div className="string absolute bottom-10 flex h-[200px] w-full justify-center">
+        <div className="string absolute bottom-10 flex h-[200px] w-full justify-center ">
           <svg viewBox="0 0 1000 200" preserveAspectRatio="none" style={{ width: "100%", height: "100%" }}>
-            <path d="M 100 100 Q 500 100 900 100" stroke="black" fill="transparent" stroke-width="2px" />
+            <path d="M 100 100 Q 500 150 900 100" stroke="black" fill="transparent" stroke-width="2px" />
           </svg>
         </div>
       </div>
