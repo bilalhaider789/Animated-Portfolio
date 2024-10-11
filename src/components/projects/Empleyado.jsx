@@ -13,11 +13,11 @@ function Empleyado({ index, title, progress, range, targetScale }) {
   }, []);
   return (
     <>
-      <div className="sticky top-16 flex h-[100vh] w-full items-center justify-center">
+      <div className="sticky top-10 flex h-[100vh] w-full items-center justify-center">
         <motion.div
           style={{
             scale,
-            top: `calc(-3% + ${index * 35}px)`,
+            top: `calc(-3% + ${index * 45}px)`,
             backgroundImage: `url('/images/greenbg.svg')`,
 
             backgroundSize: "cover",

@@ -23,7 +23,7 @@ function App() {
         <IntroHeading></IntroHeading>
         <Eyes></Eyes>
         <ProjectView></ProjectView>
-        <ImagePage></ImagePage>
+        {/* <ImagePage></ImagePage> */}
         <Sections></Sections>
         <div className="flex h-screen w-full items-center justify-center bg-neutral-400 text-[15vh] leading-[0.9] tracking-tighter">
           Thanks, <br></br> for Visiting

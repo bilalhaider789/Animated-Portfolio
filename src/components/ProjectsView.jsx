@@ -5,6 +5,7 @@ import { motion, useScroll } from "framer-motion";
 import IntelliLines from "./projects/IntelliLines";
 import Empleyado from "./projects/Empleyado";
 import Phantom from "./projects/Phantom";
+import Skylark from "./projects/Skylark";
 
 function ProjectsView({ title, description, src, link, color }) {
   const container = useRef(null);
@@ -18,7 +19,11 @@ function ProjectsView({ title, description, src, link, color }) {
   }, []);
   return (
     <>
-      <div ref={container} className="relative">
+      <div
+        ref={container}
+        className="relative "
+        // style={{ backgroundImage: `url('/images/smoothbg.png')`, backgroundSize: "cover" }}
+      >
         <div>
           <div className="sticky top-0 flex h-[25vh] w-full items-center justify-center">
             <div className="absolute top-10 font-otamanopee text-[4vw]">
@@ -27,6 +32,7 @@ function ProjectsView({ title, description, src, link, color }) {
           </div>
 
           <IntelliLines
+            key={0}
             index={0}
             progress={scrollYProgress}
             range={[0 * 0.3, 1]}
@@ -41,24 +47,24 @@ function ProjectsView({ title, description, src, link, color }) {
             range={[1 * 0.3, 1]}
             targetScale={1 - (projects.length - 1) * 0.05}
           ></Empleyado>
-
-          <Phantom
+          <Skylark
             key={2}
             index={2}
             {...projects[2]}
             progress={scrollYProgress}
             range={[2 * 0.3, 1]}
             targetScale={1 - (projects.length - 2) * 0.05}
-          ></Phantom>
+          ></Skylark>
 
-          {/*<Card
-            key={4}
-            index={4}
+          <Phantom
+            key={3}
+            index={3}
             {...projects[3]}
             progress={scrollYProgress}
             range={[3 * 0.3, 1]}
-            targetScale={1 - (projects.length - 4) * 0.05}
-          ></Card> */}
+            targetScale={1 - (projects.length - 3) * 0.05}
+          ></Phantom>
+
           {/* {projects.map((project, idx) => {
             const targetScale = 1 - (projects.length - idx) * 0.05;
             return (

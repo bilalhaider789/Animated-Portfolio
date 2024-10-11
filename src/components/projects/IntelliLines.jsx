@@ -13,14 +13,12 @@ function IntelliLines({ index, title, progress, range, targetScale }) {
   }, []);
   return (
     <>
-      {/*  background: "linear-gradient(90deg, rgba(228,238,249,1) 0%, rgba(168,200,249,1) 100%)", */}
       <div className="sticky top-10 flex h-[100vh] w-full items-center justify-center">
         <motion.div
           style={{
             scale,
-            top: `calc(-3% + ${index * 35}px)`,
+            top: `calc(-3% + ${index * 45}px)`,
             backgroundImage: `url('/images/bluebg.svg')`,
-            // backgroundImage: `url('/images/brown-white.png')`,
 
             backgroundSize: "cover",
           }}

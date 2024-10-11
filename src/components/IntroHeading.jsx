@@ -97,7 +97,7 @@ function IntroHeading() {
         </h4>
         <div className="string absolute bottom-10 flex h-[200px] w-full justify-center ">
           <svg viewBox="0 0 1000 200" preserveAspectRatio="none" style={{ width: "100%", height: "100%" }}>
-            <path d="M 100 100 Q 500 150 900 100" stroke="black" fill="transparent" stroke-width="2px" />
+            <path d="M 100 100 Q 500 150 900 100" stroke="black" fill="transparent" strokeWidth="2px" />
           </svg>
         </div>
       </div>
