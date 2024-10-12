@@ -1,57 +1,9 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
+import StringLine from "./StringLine";
 
 function IntroHeading() {
-  let finalPath = "M 100 100 Q 500 100 900 100";
-  const [stringEnter, setStringEnter] = useState(false);
-
-  useEffect(() => {
-    let string = document.querySelector(".string");
-    const svg = document.querySelector("svg");
-    const handleMouseMove = dets => {
-      const rect = svg.getBoundingClientRect();
-      const mouseY = (dets.clientY - rect.top) / rect.height;
-
-      if (mouseY < 0.55 && mouseY > 0.45) {
-        if (!stringEnter) {
-          setStringEnter(true);
-        }
-      }
-      if (!stringEnter) return;
-      const mouseX = ((dets.clientX - rect.left) / rect.width) * 1000;
-      let adjustedMouseY = mouseY;
-      if (adjustedMouseY > 0.7 || adjustedMouseY < 0.25) {
-        adjustedMouseY *= 250;
-      } else {
-        adjustedMouseY *= 200;
-      }
-      const path = `M 100 100 Q ${mouseX} ${adjustedMouseY} 900 100`;
-      gsap.to("svg path", {
-        attr: { d: path },
-        duration: 0.3,
-        ease: "power3.out",
-      });
-    };
-
-    const handleMouseLeave = () => {
-      setStringEnter(false);
-      gsap.to("svg path", {
-        attr: { d: finalPath },
-        duration: 1.5,
-        ease: "elastic.out(1.2,0.1)",
-      });
-    };
-
-    string.addEventListener("mousemove", handleMouseMove);
-    string.addEventListener("mouseleave", handleMouseLeave);
-
-    return () => {
-      string.removeEventListener("mousemove", handleMouseMove);
-      string.removeEventListener("mouseleave", handleMouseLeave);
-    };
-  }, [stringEnter]);
-
   useGSAP(() => {
     gsap.from(".heading span", {
       delay: 0.5,
@@ -95,10 +47,8 @@ function IntroHeading() {
         <h4 className="desc mt-[1.5vw] text-[1.5vw] uppercase text-gray-600">
           Professional Full Stack Developer | Polyglot Engineer | Devops
         </h4>
-        <div className="string absolute bottom-10 flex h-[200px] w-full justify-center ">
-          <svg viewBox="0 0 1000 200" preserveAspectRatio="none" style={{ width: "100%", height: "100%" }}>
-            <path d="M 100 100 Q 500 150 900 100" stroke="black" fill="transparent" strokeWidth="2px" />
-          </svg>
+        <div className="mt-16">
+          <StringLine />
         </div>
       </div>
       <div className="relative h-[100vh] w-full font-otamanopee">

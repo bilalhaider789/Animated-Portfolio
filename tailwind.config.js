@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         futura: ["Futura", "sans-serif"],
         otamanopee: ["Otamanopee", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"]
       },
     },
   },

@@ -10,6 +10,7 @@ import ImagePage from "./components/imagePage";
 import Sections from "./components/sections";
 import IntroHeading from "./components/IntroHeading";
 import ProjectView from "./components/ProjectsView";
+import StringLine from "./components/StringLine";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll({
@@ -24,6 +25,8 @@ function App() {
         <Eyes></Eyes>
         <ProjectView></ProjectView>
         {/* <ImagePage></ImagePage> */}
+        <StringLine />
+
         <Sections></Sections>
         <div className="flex h-screen w-full items-center justify-center bg-neutral-400 text-[15vh] leading-[0.9] tracking-tighter">
           Thanks, <br></br> for Visiting
