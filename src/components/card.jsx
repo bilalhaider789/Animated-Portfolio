@@ -1,15 +1,20 @@
 import { useEffect, useRef, useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
-function Card({ title, description, src, link, color }) {
+function Card({ index, title, description, src, link, color, progress, range, targetScale }) {
+  const scale = useTransform(progress, range, [1, targetScale]);
+
   useEffect(() => {
-    console.log(title);
   }, []);
   return (
     <>
-      <div className="sticky top-0 h-[100vh] w-full flex justify-center items-center">
-        <div style={{ backgroundColor: color }} className=" h-full w-full">
-          <img src={link} className="h-full w-full object-cover "></img>
-        </div>
+      <div className="sticky top-10 flex h-[100vh] w-full items-center justify-center">
+        <motion.div
+          style={{ scale, backgroundColor: color, top: `calc(-3% + ${index * 45}px)` }}
+          className="relative h-[60vh] w-[70vw] rounded-lg"
+        >
+          <img src={link} className="h-full w-full rounded-lg object-cover"></img>
+        </motion.div>
       </div>
     </>
   );

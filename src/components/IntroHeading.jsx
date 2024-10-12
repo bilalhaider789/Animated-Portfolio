@@ -1,58 +1,9 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
+import StringLine from "./StringLine";
 
 function IntroHeading() {
-  let path = "M 100 100 Q 500 100 900 100";
-  let finalPath = "M 100 100 Q 500 100 900 100";
-  const [stringEnter, setStringEnter] = useState(false);
-
-  useEffect(() => {
-    let string = document.querySelector(".string");
-    const svg = document.querySelector("svg");
-    const handleMouseMove = dets => {
-      const rect = svg.getBoundingClientRect();
-      const mouseY = (dets.clientY - rect.top) / rect.height;
-
-      if (mouseY < 0.55 && mouseY > 0.45) {
-        if (!stringEnter) {
-          setStringEnter(true);
-        }
-      }
-      if (!stringEnter) return;
-      const mouseX = ((dets.clientX - rect.left) / rect.width) * 1000;
-      let adjustedMouseY = mouseY;
-      if (adjustedMouseY > 0.7 || adjustedMouseY < 0.25) {
-        adjustedMouseY *= 250;
-      } else {
-        adjustedMouseY *= 200;
-      }
-      const path = `M 100 100 Q ${mouseX} ${adjustedMouseY} 900 100`;
-      gsap.to("svg path", {
-        attr: { d: path },
-        duration: 0.3,
-        ease: "power3.out",
-      });
-    };
-
-    const handleMouseLeave = () => {
-      setStringEnter(false);
-      gsap.to("svg path", {
-        attr: { d: finalPath },
-        duration: 1.5,
-        ease: "elastic.out(1.2,0.1)",
-      });
-    };
-
-    string.addEventListener("mousemove", handleMouseMove);
-    string.addEventListener("mouseleave", handleMouseLeave);
-
-    return () => {
-      string.removeEventListener("mousemove", handleMouseMove);
-      string.removeEventListener("mouseleave", handleMouseLeave);
-    };
-  }, [stringEnter]);
-
   useGSAP(() => {
     gsap.from(".heading span", {
       delay: 0.5,
@@ -74,7 +25,7 @@ function IntroHeading() {
     return text.split("").map((letter, index) => (
       <span
         key={index}
-        className={`letter inline-block text-[8vw] uppercase leading-[0.5] tracking-tighter hover:text-[#e65b05]`}
+        className={`letter inline-block text-[8vw] uppercase leading-[1] tracking-tighter hover:text-[#e65b05]`}
       >
         {letter}
       </span>
@@ -84,7 +35,7 @@ function IntroHeading() {
   return (
     <div className="px-[5vw]">
       <div className="section1 relative h-[100vh] w-full pt-[20vh] font-otamanopee">
-        <div className="heading text-[12vw] leading-[0.7] tracking-tight">
+        <div className="heading text-[8vw] leading-[0.7] tracking-tight">
           {renderLetters("Hello,")}
           <br></br>
           <div className="flex gap-[2.5vw]">
@@ -93,13 +44,11 @@ function IntroHeading() {
             <h2>{renderLetters("Haider")}</h2>
           </div>
         </div>
-        <h4 className="desc mt-[2vw] text-[2vw] uppercase text-gray-600">
+        <h4 className="desc mt-[1.5vw] text-[1.5vw] uppercase text-gray-600">
           Professional Full Stack Developer | Polyglot Engineer | Devops
         </h4>
-        <div className="string absolute bottom-10 flex h-[200px] w-full justify-center">
-          <svg viewBox="0 0 1000 200" preserveAspectRatio="none" style={{ width: "100%", height: "100%" }}>
-            <path d="M 100 100 Q 500 100 900 100" stroke="black" fill="transparent" stroke-width="2px" />
-          </svg>
+        <div className="mt-16">
+          <StringLine />
         </div>
       </div>
       <div className="relative h-[100vh] w-full font-otamanopee">

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1296" height="554" viewBox="0 0 1296 554" fill="none">
+<rect width="1296" height="554" fill="url(#paint0_linear_1093_19190)"/>
+<rect width="1296" height="554" stroke="white"/>
+<g clip-path="url(#clip0_1093_19190)">
+<g filter="url(#filter0_dd_1093_19190)">
+<g clip-path="url(#clip1_1093_19190)">
+<g clip-path="url(#clip2_1093_19190)">
+<g clip-path="url(#clip3_1093_19190)">
+</g>
+<g style="mix-blend-mode:darken">
+</g>
+<g clip-path="url(#clip4_1093_19190)">
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_dd_1093_19190" x="676.08" y="90.04" width="486.54" height="493.84" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="3.96"/>
+<feGaussianBlur stdDeviation="3.96"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.268333 0 0 0 0 0.0751333 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1093_19190"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="0.495"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow_1093_19190" result="effect2_dropShadow_1093_19190"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1093_19190" result="shape"/>
+</filter>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_1093_19190" transform="matrix(0.00597015 0 0 0.00603015 -6.14179 -3.92915)"/>
+</pattern>
+<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image1_1093_19190" transform="matrix(0.0078125 0 0 0.00811852 0 -0.0195854)"/>
+</pattern>
+<pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image1_1093_19190" transform="matrix(0.0078125 0 0 0.00811852 0 -0.0195854)"/>
+</pattern>
+<pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image2_1093_19190" transform="matrix(0.00195312 0 0 0.00202963 0 -0.0195854)"/>
+</pattern>
+<linearGradient id="paint0_linear_1093_19190" x1="5.09773e-06" y1="32.8937" x2="1248.61" y2="611.416" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EDFAE6"/>
+<stop offset="0.509219" stop-color="#E8FAE1"/>
+<stop offset="1" stop-color="#BCE8B3"/>
+</linearGradient>
+<clipPath id="clip0_1093_19190">
+<rect width="754" height="554" fill="white" transform="translate(542)"/>
+</clipPath>
+<clipPath id="clip1_1093_19190">
+</clipPath>
+<clipPath id="clip2_1093_19190">
+<rect width="427.5" height="540" fill="white" transform="translate(705.6 193)"/>
+</clipPath>
+<clipPath id="clip3_1093_19190">
+<rect x="710.1" y="209.2" width="21.6" height="21.6" rx="3.6" fill="white"/>
+</clipPath>
+<clipPath id="clip4_1093_19190">
+<rect width="14.4" height="14.4" fill="white" transform="translate(860.5 212.8)"/>
+</clipPath>
+</defs>
+</svg>
