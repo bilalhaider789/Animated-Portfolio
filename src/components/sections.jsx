@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Skills from "./skills/Skills";
 import Frontend from "./skills/Frontend";
+import Backend from "./skills/Backend";
 
 function Sections() {
   gsap.registerPlugin(ScrollTrigger);
@@ -38,9 +39,7 @@ function Sections() {
           <div ref={sectionRef} className="inner relative flex h-[100vh] w-[400vw]">
             <Skills />
             <Frontend/>
-            <div className="flex h-[100vh] w-[100vw] items-center justify-center bg-slate-400">
-              <h3>Backend</h3>
-            </div>
+            <Backend />
             <div className="flex h-[100vh] w-[100vw] items-center justify-center bg-slate-200">
               <h3>DevOps</h3>
             </div>

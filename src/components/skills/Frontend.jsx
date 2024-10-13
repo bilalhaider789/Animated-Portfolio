@@ -33,6 +33,10 @@ function Frontend() {
       icon: "next.svg",
       name: "Next.js",
     },
+    {
+      icon: "fabric.png",
+      name: "Fabric.js",
+    },
   ];
   const skills2 = [
     {
