@@ -58,7 +58,7 @@ function Devops() {
   ];
   return (
     <>
-      <section className="flex h-[100vh] w-[100vw] flex-col bg-primary">
+      <section className="flex h-[100vh] w-[100vw] flex-col bg-primary px-20">
         <h3 className="mt-14 font-otamanopee text-[4vw]">DevOps</h3>
         <div className="flex w-full justify-between">
           <div className="mt-10 w-full font-poppins text-[1.5vw] tracking-tight">

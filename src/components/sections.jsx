@@ -37,7 +37,7 @@ function Sections() {
     <>
       <section className="outer relative overflow-x-hidden">
         <div ref={triggerRef}>
-          <div ref={sectionRef} className="inner relative flex h-[100vh] w-[400vw]">
+          <div ref={sectionRef} className="inner relative flex h-[100vh] w-[400vw] overflow-hidden">
             <Skills />
             <Frontend/>
             <Backend />
