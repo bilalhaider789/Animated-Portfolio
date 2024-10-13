@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Skills from "./skills/Skills";
 import Frontend from "./skills/Frontend";
 import Backend from "./skills/Backend";
+import Devops from "./skills/Devops";
 
 function Sections() {
   gsap.registerPlugin(ScrollTrigger);
@@ -40,9 +41,7 @@ function Sections() {
             <Skills />
             <Frontend/>
             <Backend />
-            <div className="flex h-[100vh] w-[100vw] items-center justify-center bg-slate-200">
-              <h3>DevOps</h3>
-            </div>
+            <Devops/>
           </div>
         </div>
       </section>
