@@ -24,7 +24,7 @@ function Skylark({ index, title, progress, range, targetScale }) {
           <div className="relative top-[5rem] flex w-full justify-between">
             <div className="w-[45%] pl-[3rem] pr-[1rem] font-otamanopee">
               <h3
-                className="relative cursor-pointer text-[2rem] hover:text-seconday"
+                className="hover:text-secondary relative cursor-pointer text-[2rem]"
                 onClick={() => openNewTab("https://skylarknova.xyz")}
               >
                 <span className="absolute left-[-2rem]">⇒</span> SkyLark
@@ -42,10 +42,7 @@ function Skylark({ index, title, progress, range, targetScale }) {
                 </p>
                 <p className="mt-2">
                   Visit the live project
-                  <span
-                    onClick={() => openNewTab("https://skylarknova.xyz")}
-                    className="cursor-pointer text-seconday"
-                  >
+                  <span onClick={() => openNewTab("https://skylarknova.xyz")} className="text-secondary cursor-pointer">
                     {" "}
                     here
                   </span>

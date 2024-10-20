@@ -27,7 +27,7 @@ function IntelliLines({ index, title, progress, range, targetScale }) {
           <div className="relative top-[5rem] flex w-full justify-between">
             <div className="w-[45%] pl-[3rem] pr-[1rem] font-otamanopee">
               <h3
-                className="relative cursor-pointer text-[2rem] hover:text-seconday"
+                className="hover:text-secondary relative cursor-pointer text-[2rem]"
                 onClick={() => openNewTab("https://intelli-lines.vercel.app/auth")}
               >
                 <span className="absolute left-[-2rem]">⇒</span> Intelli-Lines
@@ -46,14 +46,14 @@ function IntelliLines({ index, title, progress, range, targetScale }) {
                   any video in just a few seconds. View the{" "}
                   <span
                     onClick={() => openNewTab("https://www.youtube.com/watch?v=-xwXv3JGKbA")}
-                    className="cursor-pointer text-seconday"
+                    className="text-secondary cursor-pointer"
                   >
                     live demo
                   </span>{" "}
                   or visit{" "}
                   <span
                     onClick={() => openNewTab("https://intelli-lines.vercel.app/auth")}
-                    className="cursor-pointer text-seconday"
+                    className="text-secondary cursor-pointer"
                   >
                     Intelli-lines.
                   </span>

@@ -5,14 +5,14 @@ export default {
     extend: {
       colors: {
         primary: "#ded9d9",
-        seconday: "#e65b05",
+        secondary: "#e65b05",
         tertiary: "#012957",
         quaternary: "#e0e5e9",
       },
       fontFamily: {
         futura: ["Futura", "sans-serif"],
         otamanopee: ["Otamanopee", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"]
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },

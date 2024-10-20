@@ -26,7 +26,7 @@ function Empleyado({ index, title, progress, range, targetScale }) {
         >
           <div className="relative top-[5rem] flex w-full justify-between">
             <div className="w-[45%] pl-[3rem] pr-[1rem] font-otamanopee">
-              <h3 className="relative cursor-pointer text-[2rem] hover:text-seconday">
+              <h3 className="hover:text-secondary relative cursor-pointer text-[2rem]">
                 <span className="absolute left-[-2rem]">⇒</span> Empleyado
               </h3>
               <div className="mt-2 text-[1.2rem]">

@@ -22,7 +22,7 @@ function Phantom({ index, title, progress, range, targetScale }) {
           <div className="relative top-[5rem] flex w-full justify-between">
             <div className="w-[45%] pl-[3rem] pr-[1rem] font-otamanopee">
               <h3
-                className="relative cursor-pointer text-[2rem] hover:text-seconday"
+                className="hover:text-secondary relative cursor-pointer text-[2rem]"
                 onClick={() => openNewTab("https://phantom-3d-bilal-haider-dev.vercel.app/")}
               >
                 <span className="absolute left-[-2rem]">⇒</span> Phantom-3D
@@ -35,21 +35,23 @@ function Phantom({ index, title, progress, range, targetScale }) {
                 </p>
                 <p className="mt-2">
                   The project helped solidify my understanding of 3D rendering, scene composition, and animation
-                  workflows in React. 
+                  workflows in React.
                 </p>
                 <p className="mt-2">
-                  Visit it live <span
+                  Visit it live{" "}
+                  <span
                     onClick={() => openNewTab("https://phantom-3d-bilal-haider-dev.vercel.app/")}
-                    className="cursor-pointer text-seconday"
+                    className="text-secondary cursor-pointer"
                   >
                     here
                   </span>{" "}
                   or get the
                   <span
                     onClick={() => openNewTab("https://github.com/bilalhaider789/phantom3D")}
-                    className="cursor-pointer text-seconday"
+                    className="text-secondary cursor-pointer"
                   >
-                    {" "} source code.
+                    {" "}
+                    source code.
                   </span>
                 </p>
               </div>
