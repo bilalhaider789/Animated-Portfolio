@@ -8,6 +8,7 @@ export default {
         secondary: "#e65b05",
         tertiary: "#012957",
         quaternary: "#e0e5e9",
+        orange: "#e65b05d5",
       },
       fontFamily: {
         futura: ["Futura", "sans-serif"],

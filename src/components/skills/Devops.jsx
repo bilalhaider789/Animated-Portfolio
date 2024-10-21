@@ -20,6 +20,10 @@ function Devops() {
       name: "Docker Containerization",
     },
     {
+      icon: "kubernetes.svg",
+      name: "Kubernetes Orchestration",
+    },
+    {
       icon: "git.svg",
       name: "Git Version Control",
     },

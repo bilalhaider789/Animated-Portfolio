@@ -12,6 +12,8 @@ import IntroHeading from "./components/IntroHeading";
 import ProjectView from "./components/ProjectsView";
 import StringLine from "./components/StringLine";
 import Experience from "./components/Experience";
+import Contact from "./components/Contact";
+import Socials from "./components/Socials";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll({
@@ -21,17 +23,19 @@ function App() {
 
   return (
     <>
-      <div className="main">
+      <div className="main relative">
+        {/* <ImagePage></ImagePage> */}
+        <Socials />
         <IntroHeading></IntroHeading>
         <Eyes></Eyes>
         <ProjectView></ProjectView>
-        {/* <ImagePage></ImagePage> */}
         <StringLine />
 
         <Sections></Sections>
         <StringLine />
 
         <Experience />
+        <Contact />
       </div>
     </>
   );
