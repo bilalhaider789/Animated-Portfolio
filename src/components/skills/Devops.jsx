@@ -3,7 +3,17 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import SkillImage from "./SkillImage";
 
 function Devops() {
-  useEffect(() => {}, []);
+  const renderLetters = (text, colorIndex) => {
+    return text.split("").map((letter, index) => (
+      <span
+        key={index}
+        style={colorIndex != undefined && index == colorIndex ? { color: "#e65b05 " } : {}}
+        className={`letter inline-block font-otamanopee text-[4vw] hover:text-secondary ${colorIndex != undefined && index == colorIndex ? "bg-secondary" : ""}`}
+      >
+        {letter}
+      </span>
+    ));
+  };
   const skills1 = [
     {
       icon: "docker.svg",
@@ -58,8 +68,8 @@ function Devops() {
   ];
   return (
     <>
-      <section className="flex h-[100vh] w-[100vw] flex-col bg-primary px-20">
-        <h3 className="mt-14 font-otamanopee text-[4vw]">DevOps</h3>
+      <section className="flex h-[100vh] w-[100vw] flex-col px-20">
+        <h3 className="mt-14">{renderLetters("DevOps")}</h3>
         <div className="flex w-full justify-between">
           <div className="mt-10 w-full font-poppins text-[1.5vw] tracking-tight">
             <p className="flex gap-2">
@@ -71,6 +81,9 @@ function Devops() {
             </p>
             <p className="flex gap-2">
               <span className="block">●</span> Managing scalable cloud infrastructure on AWS (EC2, ECS) and Azure.
+            </p>
+            <p className="flex gap-2">
+              <span className="block">●</span> Managing kubernetes cluster on Bare Metal and AKS.
             </p>
 
             <p className="flex gap-2">

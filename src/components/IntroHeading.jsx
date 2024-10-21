@@ -21,11 +21,24 @@ function IntroHeading() {
     });
   });
 
-  const renderLetters = text => {
+  const renderLetters = (text, colorIndex) => {
     return text.split("").map((letter, index) => (
       <span
         key={index}
-        className={`letter inline-block text-[8vw] uppercase leading-[1] tracking-tighter hover:text-[#e65b05]`}
+        style={colorIndex != undefined && index == colorIndex ? { color: "#e65b05 " } : {}}
+        className={`letter inline-block  uppercase leading-[1] tracking-tighter hover:text-secondary`}
+      >
+        {letter}
+      </span>
+    ));
+  };
+
+  const simpleRenderLetters = (text, colorIndex) => {
+    return text.split("").map((letter, index) => (
+      <span
+        key={index}
+        style={colorIndex != undefined && index == colorIndex ? { color: "#e65b05 " } : {}}
+        className={`letter inline-block font-otamanopee text-[4vw] hover:text-secondary ${colorIndex != undefined && index == colorIndex ? "bg-secondary" : ""}`}
       >
         {letter}
       </span>
@@ -36,10 +49,10 @@ function IntroHeading() {
     <div className="px-[5vw]">
       <div className="section1 relative h-[100vh] w-full pt-[20vh] font-otamanopee">
         <div className="heading text-[8vw] leading-[0.7] tracking-tight">
-          {renderLetters("Hello,")}
+          {renderLetters("Hello,", 0)}
           <br></br>
-          <div className="flex gap-[2.5vw]">
-            <h2>{renderLetters("I'M")} </h2>
+          <div className="flex gap-[2.5vw] text-[8vw]">
+            <h2>{renderLetters("I'M", 0)} </h2>
             <h2>{renderLetters("Bilal")} </h2>
             <h2>{renderLetters("Haider")}</h2>
           </div>
@@ -53,7 +66,7 @@ function IntroHeading() {
       </div>
       <div className="relative h-[100vh] w-full font-otamanopee">
         <div className="flex w-full justify-center">
-          <h1 className="text-[4vw]">About Me</h1>
+          <h1 className="flex gap-6"> <span>{simpleRenderLetters("About")}</span> <span>{simpleRenderLetters("Me")}</span></h1>
         </div>
         <div className="w-fulll mt-20 flex items-center justify-center gap-10">
           <div className="w-[35vw] text-lg">

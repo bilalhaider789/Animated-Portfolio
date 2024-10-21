@@ -13,21 +13,24 @@ function ProjectsView({ title, description, src, link, color }) {
     target: container,
     offset: ["start start", "end end"],
   });
-
-  useEffect(() => {
-    console.log(title);
-  }, []);
+  const renderLetters = (text, colorIndex) => {
+    return text.split("").map((letter, index) => (
+      <span
+        key={index}
+        style={colorIndex != undefined && index == colorIndex ? { color: "#e65b05 " } : {}}
+        className={`letter inline-block font-otamanopee text-[4vw] hover:text-secondary ${colorIndex != undefined && index == colorIndex ? "bg-secondary" : ""}`}
+      >
+        {letter}
+      </span>
+    ));
+  };
   return (
     <>
-      <div
-        ref={container}
-        className="relative "
-        // style={{ backgroundImage: `url('/images/smoothbg.png')`, backgroundSize: "cover" }}
-      >
+      <div ref={container} className="relative">
         <div>
           <div className="sticky top-0 flex h-[25vh] w-full items-center justify-center">
-            <div className="absolute top-10 font-otamanopee text-[4vw]">
-              <span>My Work</span>
+            <div className="absolute top-10 flex gap-6">
+              <span>{renderLetters("My")}</span> <span>{renderLetters("Work")}</span>
             </div>
           </div>
 
