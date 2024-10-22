@@ -14,6 +14,9 @@ import StringLine from "./components/StringLine";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Socials from "./components/Socials";
+import Loading from "./components/Loading";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll({
@@ -21,9 +24,22 @@ function App() {
     smooth: true,
   });
 
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    const timer = setTimeout(() => {
+      document.body.style.overflow = "";
+    }, 5000);
+
+    return () => {
+      clearTimeout(timer);
+      document.body.style.overflow = "";
+    };
+  }, []);
+
   return (
     <>
       <div className="main relative">
+        <Loading />
         {/* <ImagePage></ImagePage> */}
         <Socials />
         <IntroHeading></IntroHeading>

@@ -6,7 +6,7 @@ import StringLine from "./StringLine";
 function IntroHeading() {
   useGSAP(() => {
     gsap.from(".heading span", {
-      delay: 0.5,
+      delay: 5,
       opacity: 0,
       duration: 0.2,
       ease: "bounce.out",
@@ -14,7 +14,7 @@ function IntroHeading() {
     });
     gsap.from(".section1 .desc", {
       y: 100,
-      delay: 1.5,
+      delay: 6,
       opacity: 0,
       duration: 0.5,
       ease: "power3.out",
@@ -26,7 +26,7 @@ function IntroHeading() {
       <span
         key={index}
         style={colorIndex != undefined && index == colorIndex ? { color: "#e65b05 " } : {}}
-        className={`letter inline-block  uppercase leading-[1] tracking-tighter hover:text-secondary`}
+        className={`letter inline-block uppercase leading-[1] tracking-tighter hover:text-secondary`}
       >
         {letter}
       </span>
@@ -66,7 +66,10 @@ function IntroHeading() {
       </div>
       <div className="relative h-[100vh] w-full font-otamanopee">
         <div className="flex w-full justify-center">
-          <h1 className="flex gap-6"> <span>{simpleRenderLetters("About")}</span> <span>{simpleRenderLetters("Me")}</span></h1>
+          <h1 className="flex gap-6">
+            {" "}
+            <span>{simpleRenderLetters("About")}</span> <span>{simpleRenderLetters("Me")}</span>
+          </h1>
         </div>
         <div className="w-fulll mt-20 flex items-center justify-center gap-10">
           <div className="w-[35vw] text-lg">
