@@ -1,11 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import LocomotiveScroll from "locomotive-scroll";
 import "./App.css";
 import Eyes from "./components/eyes";
-import { projects } from "./assets/data";
-import Card from "./components/card";
 import ImagePage from "./components/imagePage";
 import Sections from "./components/sections";
 import IntroHeading from "./components/IntroHeading";
@@ -15,8 +11,7 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Socials from "./components/Socials";
 import Loading from "./components/Loading";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import Navbar from "./components/Navbar";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll({
@@ -40,6 +35,7 @@ function App() {
     <>
       <div className="main relative">
         <Loading />
+        <Navbar />
         {/* <ImagePage></ImagePage> */}
         <Socials />
         <IntroHeading></IntroHeading>

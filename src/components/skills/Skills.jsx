@@ -16,7 +16,7 @@ function Skills() {
   };
   return (
     <>
-      <section className="flex h-[100vh] w-[100vw] flex-col items-center font-otamanopee">
+      <section className="flex h-[100vh] w-[100vw] flex-col items-center font-otamanopee" id="skills">
         <h3 className="mt-10">{renderLetters("Skills")}</h3>
         <p className="mt-10 text-[2.5vw] leading-[0.5] tracking-tighter">Ready to explore my skillset?</p>
         <p className="mt-4 text-[2.5vw] tracking-tighter">Lets See my gears ! </p>

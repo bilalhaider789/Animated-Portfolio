@@ -22,8 +22,8 @@ export default function Contact() {
     window.open(url, "_blank");
   };
   return (
-    <div className="flex w-full flex-col items-center bg-orange font-otamanopee text-white">
-      <h1 className="text-[3.2vw] mt-6 font-medium tracking-widest">CONTACT</h1>
+    <div className="flex w-full flex-col items-center bg-orange font-otamanopee text-white" id="contact">
+      <h1 className="mt-6 text-[3.2vw] font-medium tracking-widest">CONTACT</h1>
       <div className="mb-24 mt-16 flex w-full justify-center gap-[10%]">
         <form className="flex w-[30%] flex-col items-start text-[1.1vw]" onSubmit={submitEmail}>
           <input
@@ -77,7 +77,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="mb-8 font-poppins text-[0.9vw] tracking-wide">
-        Made by Bilal Haider | This page was made with react.js, gsap, framer-motion, locomotive & tailwind css.
+        Designed & Developed by Bilal Haider | This page was built with react.js, gsap, framer-motion, locomotive & tailwind css.
       </div>
     </div>
   );

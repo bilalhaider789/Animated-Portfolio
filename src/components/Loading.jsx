@@ -20,7 +20,7 @@ export default function Loading() {
         }
         return prevLoader;
       });
-    }, 50);
+    }, 40);
   };
   useEffect(() => {
     startLoader();
@@ -44,9 +44,8 @@ export default function Loading() {
 
   return (
     <div className="overlay fixed z-[200] flex h-[100vh] w-[100vw]">
-      <div className="bar text-white1 absolute bottom-0 right-[2vw] text-[10vw] font-bold">{loader}</div>
-      <div className="bar text-white1 absolute left-[2vw] top-0 text-[5vw] font-bold">Loading ...</div>
-
+      <div className="bar absolute bottom-0 right-[2vw] text-[10vw] font-bold text-white1">{loader}</div>
+      <div className="bar absolute left-[2vw] top-[1vw] text-[5vw] font-bold text-white1">Loading ...</div>
       <div className="bar h-[110vh] w-[10vw] bg-secondary font-otamanopee"></div>
       <div className="bar h-[110vh] w-[10vw] bg-secondary"></div>
       <div className="bar h-[110vh] w-[10vw] bg-secondary"></div>

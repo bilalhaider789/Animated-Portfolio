@@ -18,7 +18,10 @@ function Experience() {
     ));
   };
   return (
-    <section className="experience-full flex h-fit pb-[5vh] 2xl:pb-[10vh] w-full items-center justify-center">
+    <section
+      className="experience-full flex h-fit w-full items-center justify-center pb-[5vh] 2xl:pb-[10vh]"
+      id="experience"
+    >
       <div className="experience flex h-full w-full flex-col items-center">
         <h3 className="mt-4">{renderLetters("Experience")}</h3>
         <div className="mt-16 flex w-full justify-start px-8">

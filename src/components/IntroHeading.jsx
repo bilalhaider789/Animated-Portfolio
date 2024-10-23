@@ -47,7 +47,7 @@ function IntroHeading() {
 
   return (
     <div className="px-[5vw]">
-      <div className="section1 relative h-[100vh] w-full pt-[20vh] 2xl:pt-[30vh] font-otamanopee">
+      <div className="section1 relative h-[100vh] w-full pt-[20vh] font-otamanopee 2xl:pt-[30vh]">
         <div className="heading text-[8vw] leading-[0.7] tracking-tight">
           {renderLetters("Hello,", 0)}
           <br></br>
@@ -60,7 +60,7 @@ function IntroHeading() {
         <h4 className="desc mt-[1.5vw] text-[1.5vw] uppercase text-gray-600">
           Professional Full Stack Developer | Polyglot Engineer | Devops
         </h4>
-        <div className="mt-24 3xl:mt-36">
+        <div className="3xl:mt-36 mt-24" id="about">
           <StringLine />
         </div>
       </div>
@@ -71,7 +71,7 @@ function IntroHeading() {
             <span>{simpleRenderLetters("About")}</span> <span>{simpleRenderLetters("Me")}</span>
           </h1>
         </div>
-        <div className="w-fulll mt-20 mb-36 flex items-center justify-center gap-10">
+        <div className="w-fulll mb-36 mt-20 flex items-center justify-center gap-10">
           <div className="w-[35vw] text-[1vw]">
             <p>
               My story starts in 2019 with a Bachelor's degree in Computer Science from Comsats University. Through

@@ -26,7 +26,7 @@ function ProjectsView({ title, description, src, link, color }) {
   };
   return (
     <>
-      <div ref={container} className="relative">
+      <div ref={container} className="relative" id="projects">
         <div>
           <div className="sticky top-0 flex h-[25vh] w-full items-center justify-center">
             <div className="absolute top-10 flex gap-6">
