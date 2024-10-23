@@ -29,7 +29,7 @@ export default function Loading() {
 
   useGSAP(() => {
     gsap.to(".bar", {
-      delay: 1.5,
+      delay: 1,
       height: 0,
       duration: 3.5,
       ease: "power4.inOut",

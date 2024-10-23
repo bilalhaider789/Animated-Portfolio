@@ -73,9 +73,9 @@ function Frontend() {
   return (
     <>
       <section className="flex h-[100vh] w-[100vw] flex-col">
-        <h3 className="mt-14">{renderLetters("Frontend")}</h3>
-        <div className="flex w-full justify-between">
-          <div className="mt-10 w-full font-poppins text-[1.5vw] tracking-tight">
+        <h3 className="mt-[5vw]">{renderLetters("Frontend")}</h3>
+        <div className="mt-[3vw] flex w-full justify-between">
+          <div className="w-full font-poppins text-[1.5vw] tracking-tight">
             <p className="flex gap-2">
               <span className="block">●</span> Building highly interactive and functional web apps with React, Next.js,
               and Vue.
@@ -98,11 +98,11 @@ function Frontend() {
               accessibility compliance in all projects.
             </p>
           </div>
-          <div className="mt-[-5vh] w-[80%]">
+          <div className="mt-[-5vw] w-[80%]">
             <DotLottieReact src="./lotties/frontend.lottie" loop autoplay />
           </div>
         </div>
-        <div className="mt-12 w-full font-poppins font-semibold text-white">
+        <div className="mt-[8vh]  w-full font-poppins font-semibold text-white">
           <div className="flex w-full justify-center gap-5">
             {skills1.map((element, key) => {
               return <SkillImage imageName={element.icon} toolTip={element.name} key={key} />;

@@ -6,28 +6,29 @@ function openNewTab(url) {
 }
 function Phantom({ index, title, progress, range, targetScale }) {
   const scale = useTransform(progress, range, [1, targetScale]);
+  const topValue = window.innerWidth >= 1800 ? `calc(-5% + ${index * 60}px)` : `calc(-3% + ${index * 45}px)`;
   return (
     <>
       <div className="sticky top-10 flex h-[100vh] w-full items-center justify-center">
         <motion.div
           style={{
             scale,
-            top: `calc(-3% + ${index * 45}px)`,
+            top: topValue,
             backgroundImage: `url('/images/greenbg.svg')`,
 
             backgroundSize: "cover",
           }}
-          className="relative h-[65vh] w-[70vw] rounded-[40px] border-8 border-white shadow-xl"
+          className="relative h-[29vw] w-[70vw] rounded-[40px] border-8 border-white shadow-xl"
         >
-          <div className="relative top-[5rem] flex w-full justify-between">
-            <div className="w-[45%] pl-[3rem] pr-[1rem] font-otamanopee">
+          <div className="relative top-[3vw] flex w-full justify-between">
+            <div className="w-[45%] pl-[3vw] pr-[1rem] font-otamanopee">
               <h3
-                className="hover:text-secondary relative cursor-pointer text-[2rem]"
+                className="relative cursor-pointer text-[2vw] hover:text-secondary"
                 onClick={() => openNewTab("https://phantom-3d-bilal-haider-dev.vercel.app/")}
               >
-                <span className="absolute left-[-2rem]">⇒</span> Phantom-3D
+                <span className="absolute left-[-2vw]">⇒</span> Phantom-3D
               </h3>
-              <div className="mt-2 text-[1.2rem]">
+              <div className="mt-2 text-[1vw]">
                 <p>
                   This project was a fun and engaging learning experience where I selected a robot model from the
                   internet and animated it using GSAP. I focused on integrating and applying key concepts from Three.js,
@@ -41,14 +42,14 @@ function Phantom({ index, title, progress, range, targetScale }) {
                   Visit it live{" "}
                   <span
                     onClick={() => openNewTab("https://phantom-3d-bilal-haider-dev.vercel.app/")}
-                    className="text-secondary cursor-pointer"
+                    className="cursor-pointer text-secondary"
                   >
                     here
                   </span>{" "}
                   or get the
                   <span
                     onClick={() => openNewTab("https://github.com/bilalhaider789/phantom3D")}
-                    className="text-secondary cursor-pointer"
+                    className="cursor-pointer text-secondary"
                   >
                     {" "}
                     source code.
@@ -64,7 +65,7 @@ function Phantom({ index, title, progress, range, targetScale }) {
                   alt="Intelli Lines"
                 />
               </div>
-              <div className="absolute left-[4rem] top-[8rem] z-20 w-[33vw] shadow-xl transition-transform duration-500 ease-in-out hover:z-30 hover:scale-105">
+              <div className="absolute left-[3vw] top-[6vw] z-20 w-[33vw] shadow-xl transition-transform duration-500 ease-in-out hover:z-30 hover:scale-105">
                 <img
                   src="./images/projects/phantom1.webp"
                   className="rounded-lg border-[1px] border-l-white border-t-white"

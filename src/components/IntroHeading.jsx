@@ -6,7 +6,7 @@ import StringLine from "./StringLine";
 function IntroHeading() {
   useGSAP(() => {
     gsap.from(".heading span", {
-      delay: 5,
+      delay: 4.2,
       opacity: 0,
       duration: 0.2,
       ease: "bounce.out",
@@ -14,7 +14,7 @@ function IntroHeading() {
     });
     gsap.from(".section1 .desc", {
       y: 100,
-      delay: 6,
+      delay: 5.5,
       opacity: 0,
       duration: 0.5,
       ease: "power3.out",
@@ -47,7 +47,7 @@ function IntroHeading() {
 
   return (
     <div className="px-[5vw]">
-      <div className="section1 relative h-[100vh] w-full pt-[20vh] font-otamanopee">
+      <div className="section1 relative h-[100vh] w-full pt-[20vh] 2xl:pt-[30vh] font-otamanopee">
         <div className="heading text-[8vw] leading-[0.7] tracking-tight">
           {renderLetters("Hello,", 0)}
           <br></br>
@@ -60,19 +60,19 @@ function IntroHeading() {
         <h4 className="desc mt-[1.5vw] text-[1.5vw] uppercase text-gray-600">
           Professional Full Stack Developer | Polyglot Engineer | Devops
         </h4>
-        <div className="mt-16">
+        <div className="mt-24 3xl:mt-36">
           <StringLine />
         </div>
       </div>
-      <div className="relative h-[100vh] w-full font-otamanopee">
+      <div className="relative h-fit w-full font-otamanopee">
         <div className="flex w-full justify-center">
           <h1 className="flex gap-6">
             {" "}
             <span>{simpleRenderLetters("About")}</span> <span>{simpleRenderLetters("Me")}</span>
           </h1>
         </div>
-        <div className="w-fulll mt-20 flex items-center justify-center gap-10">
-          <div className="w-[35vw] text-lg">
+        <div className="w-fulll mt-20 mb-36 flex items-center justify-center gap-10">
+          <div className="w-[35vw] text-[1vw]">
             <p>
               My story starts in 2019 with a Bachelor's degree in Computer Science from Comsats University. Through
               collaborations with local and international clients, I honed my technical and project management skills,
@@ -89,7 +89,7 @@ function IntroHeading() {
               I am working on highly optimized projects that demand visually appealing and efficient web solutions.
             </p>
           </div>
-          <div className="z-0 h-[16rem] w-[16rem] overflow-hidden rounded-full bg-transparent md:h-[20rem] md:w-[20rem]">
+          <div className="z-0 h-[16rem] w-[16rem] overflow-hidden rounded-full bg-transparent md:h-[18vw] md:w-[18vw]">
             <img className="rounded-full" src="./images/dp.png"></img>
           </div>
         </div>

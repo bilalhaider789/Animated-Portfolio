@@ -6,6 +6,7 @@ function openNewTab(url) {
 }
 function Skylark({ index, title, progress, range, targetScale }) {
   const scale = useTransform(progress, range, [1, targetScale]);
+  const topValue = window.innerWidth >= 1800 ? `calc(-5% + ${index * 60}px)` : `calc(-3% + ${index * 45}px)`;
 
   useEffect(() => {}, []);
   return (
@@ -14,22 +15,22 @@ function Skylark({ index, title, progress, range, targetScale }) {
         <motion.div
           style={{
             scale,
-            top: `calc(-3% + ${index * 45}px)`,
+            top: topValue,
             backgroundImage: `url('/images/bluebg.svg')`,
 
             backgroundSize: "cover",
           }}
-          className="relative h-[65vh] w-[70vw] rounded-[40px] border-8 border-white shadow-xl"
+          className="relative h-[29vw] w-[70vw] rounded-[40px] border-8 border-white shadow-xl"
         >
-          <div className="relative top-[5rem] flex w-full justify-between">
-            <div className="w-[45%] pl-[3rem] pr-[1rem] font-otamanopee">
+          <div className="relative top-[3vw] flex w-full justify-between">
+            <div className="w-[45%] pl-[3vw] pr-[1rem] font-otamanopee">
               <h3
-                className="hover:text-secondary relative cursor-pointer text-[2rem]"
+                className="relative cursor-pointer text-[2vw] hover:text-secondary"
                 onClick={() => openNewTab("https://skylarknova.xyz")}
               >
-                <span className="absolute left-[-2rem]">⇒</span> SkyLark
+                <span className="absolute left-[-2vw]">⇒</span> SkyLark
               </h3>
-              <div className="mt-2 text-[1.2rem]">
+              <div className="mt-2 text-[1vw]">
                 <p>
                   A blockchain-based marketing system that integrates embedded and smart wallets. Users can create
                   marketing campaigns, referred to as "activations,". Participants in these activations compete for
@@ -42,7 +43,7 @@ function Skylark({ index, title, progress, range, targetScale }) {
                 </p>
                 <p className="mt-2">
                   Visit the live project
-                  <span onClick={() => openNewTab("https://skylarknova.xyz")} className="text-secondary cursor-pointer">
+                  <span onClick={() => openNewTab("https://skylarknova.xyz")} className="cursor-pointer text-secondary">
                     {" "}
                     here
                   </span>
@@ -57,7 +58,7 @@ function Skylark({ index, title, progress, range, targetScale }) {
                   alt="Intelli Lines"
                 />
               </div>
-              <div className="absolute left-[4rem] top-[6rem] z-20 w-[33vw] shadow-xl transition-transform duration-500 ease-in-out hover:z-30 hover:scale-105">
+              <div className="absolute left-[3vw] top-[6vw] z-20 w-[33vw] shadow-xl transition-transform duration-500 ease-in-out hover:z-30 hover:scale-105">
                 <img
                   src="./images/projects/skylark1.png"
                   className="border-t- white rounded-lg border-[1px] border-l-white"
