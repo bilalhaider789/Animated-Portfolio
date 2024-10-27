@@ -48,9 +48,12 @@ export default function Contact() {
         </div>
       )}
       <div className="flex w-full flex-col items-center bg-orange font-otamanopee text-white" id="contact">
-        <h1 className="mt-6 text-[3.2vw] font-medium tracking-widest">CONTACT</h1>
-        <div className="mb-24 mt-16 flex w-full justify-center gap-[10%]">
-          <form className="flex w-[30%] flex-col items-start text-[1.1vw]" onSubmit={submitEmail}>
+        <h1 className="mt-6 text-[2rem] font-medium tracking-widest md:text-[3rem] xl:text-[3.2vw]">CONTACT</h1>
+        <div className="mb-24 mt-16 flex w-full flex-col items-center gap-[10%] xl:flex-row xl:justify-center">
+          <form
+            className="flex w-[80%] flex-col items-start md:w-[50%] xl:w-[30%] xl:text-[1.1vw]"
+            onSubmit={submitEmail}
+          >
             <input
               placeholder="Name"
               type="text"
@@ -74,7 +77,7 @@ export default function Contact() {
               required
               className="mt-8 w-full rounded-md border-2 border-white bg-transparent p-2 placeholder-white focus:outline-none"
             ></textarea>
-            <div className="mt-[1vw] flex w-full justify-end">
+            <div className="mt-6 flex w-full justify-end xl:mt-[1vw]">
               <AnimatedButton
                 text="Click Me"
                 bgColor="transparent"
@@ -85,35 +88,37 @@ export default function Contact() {
               />
             </div>
           </form>
-          <div className="flex flex-col gap-5 text-[1vw]">
-            <p className="flex cursor-pointer items-center gap-2" onClick={() => (window.location.href = "mailto:")}>
-              <img src="./icons/mail.svg" className="w-7"></img>
-              bilalhaider1311@gmail.com
-            </p>
-            <p
-              className="flex cursor-pointer items-center gap-2"
-              onClick={() => openURL("https://github.com/bilalhaider789")}
-            >
-              <img src="./icons/github-white.svg" className="w-8"></img>
-              github.com/bilalhaider789
-            </p>
-            <p
-              className="flex cursor-pointer items-center gap-2"
-              onClick={() => openURL("https://www.linkedin.com/in/muhammad-bilal-haider-8233931b9/")}
-            >
-              <img src="./icons/linkedin-white.svg" className="w-8"></img>
-              linkedin.com/MuhammadBilalHaider
-            </p>
-            <p
-              className="flex cursor-pointer items-center gap-2"
-              onClick={() => openURL("https://www.linkedin.com/in/muhammad-bilal-haider-8233931b9/")}
-            >
-              <img src="./icons/whatsapp.svg" className="w-8"></img>
-              WhatsApp/+923157960542
-            </p>
+          <div className="mt-6 flex w-[80%] justify-end md:w-[50%] xl:mt-0 xl:w-fit">
+            <div className="flex flex-col gap-5 xl:text-[1vw]">
+              <p className="flex cursor-pointer items-center gap-2" onClick={() => (window.location.href = "mailto:")}>
+                <img src="./icons/mail.svg" className="w-7"></img>
+                bilalhaider1311@gmail.com
+              </p>
+              <p
+                className="flex cursor-pointer items-center gap-2"
+                onClick={() => openURL("https://github.com/bilalhaider789")}
+              >
+                <img src="./icons/github-white.svg" className="w-8"></img>
+                github.com/bilalhaider789
+              </p>
+              <p
+                className="flex cursor-pointer items-center gap-2"
+                onClick={() => openURL("https://www.linkedin.com/in/muhammad-bilal-haider-8233931b9/")}
+              >
+                <img src="./icons/linkedin-white.svg" className="w-8"></img>
+                linkedin.com/MuhammadBilalHaider
+              </p>
+              <p
+                className="flex cursor-pointer items-center gap-2"
+                onClick={() => openURL("https://www.linkedin.com/in/muhammad-bilal-haider-8233931b9/")}
+              >
+                <img src="./icons/whatsapp.svg" className="w-8"></img>
+                WhatsApp/+923157960542
+              </p>
+            </div>
           </div>
         </div>
-        <div className="mb-8 font-poppins text-[0.9vw] tracking-wide">
+        <div className="mb-8 font-poppins text-sm md:text-md xl:text-[0.9vw] tracking-wide text-center px-6">
           Designed & Developed by Bilal Haider | This page was built with react.js, gsap, framer-motion, locomotive &
           tailwind css.
         </div>

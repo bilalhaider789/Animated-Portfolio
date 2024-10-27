@@ -6,7 +6,7 @@ function openNewTab(url) {
 }
 function IntelliLines({ index, title, progress, range, targetScale }) {
   const scale = useTransform(progress, range, [1, targetScale]);
-  const topValue = window.innerWidth >= 1800 ? `calc(-5% + ${index * 60}px)` : `calc(-5% + ${index * 45}px)`;
+  const topValue = window.innerWidth >= 1800 ? `calc(-5% + ${index * 60}px)` : `calc(-3% + ${index * 45}px)`;
   console.log(window.innerWidth);
   useEffect(() => {
     console.log(title);

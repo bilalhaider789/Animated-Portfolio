@@ -40,3 +40,51 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; /* Thumb color on hover */
 }
+
+@media (max-width: 768px) {
+  .heading-xl {
+    font-size: 13vw;
+  }
+
+  .heading-lg {
+    font-size: 2.7rem;
+  }
+
+  .heading-sm {
+    font-size: 1rem;
+  }
+
+  .paragraph-md {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .heading-xl {
+    font-size: 5rem;
+  }
+  .heading-lg {
+    font-size: 3.5rem;
+  }
+  .heading-sm {
+    font-size: 1.5rem;
+  }
+  .paragraph-md {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1250px) {
+  .heading-xl {
+    font-size: 8vw;
+  }
+  .heading-lg {
+    font-size: 4vw;
+  }
+  .heading-sm {
+    font-size: 1.2vw;
+  }
+  .paragraph-md {
+    font-size: 1.1vw;
+  }
+}

@@ -8,7 +8,7 @@ export default function Socials() {
     window.open(url, "_blank");
   };
   return (
-    <div className="fixed bottom-0 right-0 z-[100] m-10 h-fit w-6">
+    <div className="hidden xl:block fixed bottom-0 right-0 z-[100] m-10 h-fit w-6">
       <div className="flex flex-col gap-10">
         <img
           src="./icons/instagram.svg"

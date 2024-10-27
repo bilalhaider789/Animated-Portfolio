@@ -23,7 +23,7 @@ function Eyes() {
   return (
     <>
       <div>
-        <div className="eyes h-screen w-full overflow-hidden">
+        <div className="eyes hidden h-screen w-full overflow-hidden xl:block">
           <div
             data-scroll
             data-scroll-speed="-0.7"
