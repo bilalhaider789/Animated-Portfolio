@@ -20,7 +20,7 @@ function IntelliLines({ index, title, progress, range, targetScale }) {
             scale,
             top: topValue,
             backgroundImage: `url('/images/bluebg.svg')`,
-
+            
             backgroundSize: "cover",
           }}
           className="relative h-[29vw] w-[70vw] rounded-[40px] border-8 border-white shadow-xl"

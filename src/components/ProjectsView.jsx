@@ -6,6 +6,7 @@ import IntelliLines from "./projects/IntelliLines";
 import Empleyado from "./projects/Empleyado";
 import Phantom from "./projects/Phantom";
 import Skylark from "./projects/Skylark";
+import AllProjects from "./projects/AllProjects";
 
 function ProjectsView({ title, description, src, link, color }) {
   const container = useRef(null);
@@ -18,7 +19,7 @@ function ProjectsView({ title, description, src, link, color }) {
       <span
         key={index}
         style={colorIndex != undefined && index == colorIndex ? { color: "#e65b05 " } : {}}
-        className={`letter inline-block font-otamanopee text-[4vw] hover:text-secondary ${colorIndex != undefined && index == colorIndex ? "bg-secondary" : ""}`}
+        className={`letter heading-lg inline-block font-otamanopee hover:text-secondary ${colorIndex != undefined && index == colorIndex ? "bg-secondary" : ""}`}
       >
         {letter}
       </span>
@@ -26,7 +27,7 @@ function ProjectsView({ title, description, src, link, color }) {
   };
   return (
     <>
-      <div ref={container} className="relative" id="projects">
+      <div ref={container} className="relative hidden lg:block" id="projects">
         <div>
           <div className="sticky top-0 flex h-[25vh] w-full items-center justify-center">
             <div className="absolute top-10 flex gap-6">
@@ -82,6 +83,9 @@ function ProjectsView({ title, description, src, link, color }) {
             );
           })} */}
         </div>
+      </div>
+      <div className="lg:hidden">
+        <AllProjects></AllProjects>
       </div>
     </>
   );

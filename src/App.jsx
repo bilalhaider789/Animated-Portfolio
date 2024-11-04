@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       <div className="main relative">
-        {/* <Loading /> */}
+        <Loading />
         <Navbar />
         {/* <ImagePage></ImagePage> */}
         <Socials />

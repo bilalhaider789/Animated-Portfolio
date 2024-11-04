@@ -6,7 +6,7 @@ import StringLine from "./StringLine";
 function IntroHeading() {
   useGSAP(() => {
     gsap.from(".heading span", {
-      // delay: 4.2,
+      delay: 4,
       opacity: 0,
       duration: 0.2,
       ease: "bounce.out",
@@ -14,7 +14,7 @@ function IntroHeading() {
     });
     gsap.from(".section1 .desc", {
       y: 100,
-      // delay: 5.5,
+      delay: 5.5,
       opacity: 0,
       duration: 0.5,
       ease: "power3.out",

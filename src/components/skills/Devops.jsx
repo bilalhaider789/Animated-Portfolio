@@ -149,7 +149,7 @@ function Devops() {
   ];
   return (
     <>
-      <section className="flex h-[100vh] w-[100vw] flex-col px-20">
+      <section className="flex h-[100vh] w-[100vw] flex-col pl-4">
         <h3 className="mt-20 md:mt-[5vw]">{renderLetters("DevOps")}</h3>
         <div className="mt-8 flex w-full justify-between md:mt-[3vw]">
           <div className="w-full pr-8 font-poppins text-[1.2rem] tracking-tight md:text-[1.5rem] xl:pr-0 xl:text-[1.5vw]">
